@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - this dispalys the ouput
  *
@@ -19,3 +19,4 @@ int main(void)
 
 	printf("size of a float: %lu bytes(s)\n", (unsigned long)sizeof(f));
 	return (0);
+}
