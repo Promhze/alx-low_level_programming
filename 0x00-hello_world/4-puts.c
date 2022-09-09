@@ -9,7 +9,7 @@
 int main(void)
 {
 	/*declarations*/
-	char set[] = "\"Programming is like building a multilingual puzzle\n";
+	char set[] = "\"Programming is like building a multilingual puzzle";
 
 	/*statements*/
 	puts(set);
