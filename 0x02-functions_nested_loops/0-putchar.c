@@ -1,4 +1,4 @@
-#include <unistd>
+#include <unistd.h>
 
 /**
  * _putchar - displays output
@@ -8,7 +8,7 @@
  * on error, -1 is returned and errno is set appropriately
  */
 
-int putchar(char)
+int _putchar(char)
 {
 	return (write(1, &c, 1));
 }
