@@ -1,20 +1,14 @@
-#include "main.h"
+#include <unistd>
+
 /**
- * main - displays output
+ * _putchar - displays output
+ * @c: character to print
  *
- * Return: alwyays return 0
+ * Return: return on succes 1
+ * on error, -1 is returned and errno is set appropriately
  */
 
-int main(void)
+int putchar(char)
 {
-	char letter[] = "_putchar";
-	int a;
-	int lenVar = sizeof(var) / sizeof(var[0]);
-
-	for (i = 0; i < lenVar - 1; i++)
-	{
-		_putchar(var[i]);
-	}
-	_putchar('\n');
-	return (0);
+	return (write(1, &c, 1));
 }
