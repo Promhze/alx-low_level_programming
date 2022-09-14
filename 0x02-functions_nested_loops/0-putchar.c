@@ -4,7 +4,7 @@
  * main - outputs the charcater
  *
  * Return: on success 1
- * on error -1 is returned, and error is set appropriately
+ * on error -1 is returned, and error is displayed
  */
 
 int main(void)
