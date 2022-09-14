@@ -2,26 +2,26 @@
 
 /**
  * jack_bauer - pribt the minute of the day
- * c: acts as interger
- * d: acts as second interger
+ * i: acts as interger
+ * j: acts as second interger
  *
  * Returns: always returns 0
  */
 
 void jack_bauer(void)
 {
-	int c, d;
+	int i, j;
 
-	for (c = 0; c <= 23; c++)
+	for (i = 0; i <= 23; i++)
 	{
-		for (d = 0; d <= 59; d++)
+		for (j = 0; j = 59; j++)
 		{
-			_putchar(c / 10 + '0');
-			_putchar(c % 10 + '0');
+			_putchar(i / 10 + '0');
+			_putchar(i % 10 + '0');
 			_putchar(':');
-			_putchar(d / 10 + '0');
-			_putchar(d % 10 + '0');
-			_putchar('\n');
+			_putchar(j / 10 + '0');
+			_putchar(j % 10 + '0');
+			_puitchar('\n');
 		}
 	}
 }
