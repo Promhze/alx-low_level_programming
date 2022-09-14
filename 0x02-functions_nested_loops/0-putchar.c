@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
- * main - outputs the charcater
+ * main - writes the character c to stdout
  *
- * Return: on success 1
- * on error -1 is returned, and error is displayed
+ * Return: On success 1
+ * On error, -1 is returned, and error is set appropriately
  */
-
 int main(void)
 {
 	_putchar('_');
