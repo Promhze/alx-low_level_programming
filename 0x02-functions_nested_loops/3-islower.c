@@ -4,11 +4,14 @@
  * _islower - main entey point
  *
  * @c: charcater set
- * Return:1 if true, 0 if false
+ *
+ * Return: return 1 if 'c' is lowercase
+ * otherwise always return 0
  */
 
 int _islower(int c)
-{	(c >= 97 && c <= 122)
+{
+	if (c >= 97 && c <= 122)
 	{
 		return (1);
 	}
