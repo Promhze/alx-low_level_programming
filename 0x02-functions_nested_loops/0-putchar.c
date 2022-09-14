@@ -1,4 +1,4 @@
-#include <instd.h>
+#include "main.h"
 
 /**
  * main - outputs the charcater
