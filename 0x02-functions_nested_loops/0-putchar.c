@@ -1,14 +1,22 @@
 #include <instd.h>
 
 /**
- * _putchar - outputs the charcater
- * @c:the characters itself
+ * main - outputs the charcater
  *
  * Return: on success 1
  * on error -1 is returned, and error is set appropriately
  */
 
-int _putchar(char)
+int main(void)
 {
-	return (write(1, &c, 1));
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }
