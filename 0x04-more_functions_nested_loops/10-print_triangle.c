@@ -3,9 +3,9 @@
 /**
  * print_triangle - prints triangle *
  * @size: size of triangle
- * i: stores value
- * j: stores second value
- * k: stores third value
+ * a: stores value
+ * b: stores second value
+ * c: stores third value
  */
 void print_triangle(int size)
 {
