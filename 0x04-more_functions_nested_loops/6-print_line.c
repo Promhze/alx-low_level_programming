@@ -3,22 +3,16 @@
 /**
  * print_line - prints a line
  * @n: integer to print stuff
- * 
+ * a: stores the iteration count
  */
 
 void print_line(int n)
 {
 	int a;
 
-	if (a <= 0)
+	for (a = 0; a < n; a++)
 	{
-		_putchar('\n');
+		_putchar('_');
 	}
-	else
-	{
-		for (a = 0; a <= n; a++)
-		{
-			_putchar('_');
-		}
-		_putchar('\n');
+	_putchar('\n');
 }
