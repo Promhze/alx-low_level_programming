@@ -8,8 +8,9 @@ int main(void)
 {
 	int i;
 
-	i = 98;
-	positive_or_negative(i);
+	i = 0; /*this assigns variables*/
+	positive_or_negative(i); /*determies whether the interger is positive
+				   or negative*/
 
 	return (0);
 }
