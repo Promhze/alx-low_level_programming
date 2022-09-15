@@ -4,6 +4,7 @@
  * print_numbers - will display numbers
  *
  */
+
 void print_numbers(void)
 {
 	int c;
