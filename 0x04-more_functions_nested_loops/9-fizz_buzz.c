@@ -21,17 +21,16 @@ int main(void)
 			{
 				printf("Buzz");
 			}
-			else
-			{
-				printf("%d", a);
-			}
-			if (a != 100)
-			{
-				printf(" ");
-			}
-			printf("\n");
-			return (0);
+		}
+		else
+		{
+			printf("%d", a);
+		}
+		if (a != 100)
+		{
+			printf(" ");
 		}
 	}
+	printf("\n");
+	return (0);
 }
-
