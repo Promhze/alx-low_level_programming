@@ -3,15 +3,15 @@
 /**
  * print_most_numbers - pribt numbers exept 2 and!4
  *
- * Return: return nothing or void
+ * Return: always 0.
  */
-int print_most_numbers(void)
+void print_most_numbers(void)
 {
 	int c;
 
-	for (c = 0; c <= 9; c++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		if (c != 2 && c != 4)
+		if (c != '2' && c != '4')
 		{
 			_putchar(c);
 		}
