@@ -4,6 +4,7 @@
  * print_line - prints a line
  *
  * @n: integer to print stuff
+ * @a: input
  */
 void print_line(int n)
 {
@@ -15,7 +16,7 @@ void print_line(int n)
 	}
 	else
 	{
-		for (a = 0; a <= n; a++)
+		for (a = 0; a <= 'n'; a++)
 		{
 			_putchar('a');
 		}
