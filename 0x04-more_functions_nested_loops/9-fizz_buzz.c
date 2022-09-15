@@ -2,7 +2,7 @@
 
 /**
  * main - main function
- * i: stores file.
+ * a: stores file.
  * Return: a number
  */
 int main(void)
