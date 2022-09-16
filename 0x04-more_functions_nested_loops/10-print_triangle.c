@@ -7,6 +7,7 @@
  * b: stores second value
  * c: stores third value
  */
+
 void print_triangle(int size)
 {
 	int a;
