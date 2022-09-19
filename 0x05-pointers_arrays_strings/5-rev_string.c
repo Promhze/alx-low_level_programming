@@ -6,7 +6,7 @@
  * @s: input string
  */
 
-void rev_string(char *s)
+void rev_string(char *str)
 {
 	int a = strlen(str) - 1, c = 0;
 	char high;
