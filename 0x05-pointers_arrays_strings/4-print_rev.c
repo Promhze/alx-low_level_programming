@@ -1,18 +1,17 @@
-#include <string.h>
 #include "main.h"
-
+#include "2-strlen.c"
 /**
  * print_rev - prints a string in reverse order
  * @str: takes in string input
  */
 
-void print_rev(char *str)
+void print_rev(char *s)
 {
-	int c, len = strlen(str);
+	int a;
 
-	for (c = len - 1; c >= 0; c--)
+	for (a = _strlen(s) - 1; a >= 0; a--)
 	{
-		_putchar(str[c]);
+		_putchar(*(s + a));
 	}
 	_putchar('\n');
 }
