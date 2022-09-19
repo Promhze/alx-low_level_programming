@@ -2,7 +2,7 @@
 #include "2-strlen.c"
 /**
  * print_rev - prints a string in reverse order
- * @str: takes in string input
+ * @s: takes in string input
  */
 
 void print_rev(char *s)
