@@ -17,6 +17,6 @@ void rev_string(char *str)
 		str[a] = str[c];
 		str[c] = high;
 		a--;
-		j++;
+		c++;
 	}
 }
