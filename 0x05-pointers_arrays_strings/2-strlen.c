@@ -9,8 +9,9 @@
 
 int _strlen(char *s)
 {
-	int num;
-	for (num = 0; s[num] ! = '\0'; num++)
+	int n;
+
+	for (n = 0; s[n] ! = '\0'; n++)
 	{}
-	return (num);
+	return (n);
 }
