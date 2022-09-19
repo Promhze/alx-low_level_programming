@@ -1,22 +1,20 @@
-#include <string.h>
 #include "main.h"
+#include "2-strlen.c"
 
 /**
  * rev_string - reverses a string
- * @str: input string
+ * @s: input string
  */
 
-void rev_string(char *str)
+void rev_string(char *s)
 {
-	int a = strlen(str) - 1, c = 0;
-	char high;
+	int a;
+	char h;
 
-	while (a > c)
+	for (a = 0; a < _strlen(s) / 2; a++)
 	{
-		high = str[i];
-		str[a] = str[c];
-		str[c] = high;
-		a--;
-		c++;
+		h = s[a];
+		s[a] = s[_strlen(s) - a - 1];
+		s[_strlen(s) - a - 1] = h;
 	}
 }
