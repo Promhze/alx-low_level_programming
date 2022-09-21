@@ -1,7 +1,6 @@
 #include "main.h"
-#include <string.h>
  /**
-  * *_strcat - concatenates two strings
+  * _strcat - concatenates two strings
   * @dest: first parameter
   * @src: second parameter
   * Return: returns a strig
@@ -18,7 +17,7 @@ char *_strcat(char *dest, char *src)
 	for (c = 0; src[c] != '\0'; c++)
 	{
 		dest[ent] = src[c];
-		ent += c;
+		ent += 1;
 	}
 	dest[ent] = '\0';
 	return (dest);
