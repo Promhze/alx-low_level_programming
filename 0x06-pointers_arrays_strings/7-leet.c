@@ -19,7 +19,7 @@ char *leet(char *x)
 		{
 			if (x[a] == big[b] || x[a] - 32 == big[b])
 			{
-				x[a] == bigNum;
+				x[a] = bigNum;
 			}
 			b++;
 		}
