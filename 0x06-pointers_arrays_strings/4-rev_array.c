@@ -17,7 +17,7 @@ void reverse_array(int *a, int n)
 	{
 		p++;
 	}
-	for (c = 0; c < n / 2; c++)
+	for (c = 0; c < b / 2; c++)
 	{
 		aux = a[c];
 		a[c] = *p;
