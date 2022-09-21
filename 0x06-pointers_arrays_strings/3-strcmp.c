@@ -12,6 +12,6 @@ char _strcmp(char *s1, char *s2)
 {
 	int compare;
 	
-	compare = strcmp(s1, s2)
+	compare = strcmp(s1, s2);
 	return (compare);
 }
