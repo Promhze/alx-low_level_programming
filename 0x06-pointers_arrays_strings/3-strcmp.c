@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strncmp - copys s string
+ * _strcmp - copys s string
  * @s1: firstparameter
  * @s2: second parameter
  * Return: returns an interger
