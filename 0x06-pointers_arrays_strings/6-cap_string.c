@@ -20,8 +20,9 @@ char *cap_string(char *x)
 		{
 			((a == 0 || s[a - 1] == spc[c]) && (s[a] >= 97 && s[a] <= 122));
 			s[a] = s[a] - 32;
+			c++;
 		}
-		c++;
+		a++;
 	}
 	return (x);
 }
