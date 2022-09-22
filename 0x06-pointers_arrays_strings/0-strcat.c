@@ -5,6 +5,7 @@
   * @src: second parameter
   * Return: returns a strig
   */
+
 char *_strcat(char *dest, char *src)
 {
 	int ent = 0, c;
