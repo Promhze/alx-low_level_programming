@@ -2,26 +2,19 @@
 
 /**
  * reverse_array - reverses array contents
- * @a: param one
+ * @a: array
  * @n: param two
- * Return: will return an interger
  */
 
 void reverse_array(int *a, int n)
 {
-	int *p, b, aux, c;
+	int i;
+	int c;
 
-	p = a;
-
-	for (b = 0; b < n; b++)
+	for (i = 0; i < n / 2; i++)
 	{
-		p++;
-	}
-	for (c = 0; c < b / 2; c++)
-	{
-		aux = a[c];
-		a[c] = *p;
-		*p = aux;
-		p--;
+		t = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1]  = c;
 	}
 }
