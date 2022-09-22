@@ -2,28 +2,26 @@
 
 /**
  * leet - leet function
- * @x: parameter x
+ * @s: parameter s
  * Return: a string
  */
-char *leet(char *x)
+
+char *leet(char *s)
 {
-	int a = 0, b, l = 5;
-	char big[5] = {'A', 'E', 'O', 'T', 'L'};
-	char bigNum[5] = {'4', '3', '0', '7', '1'};
+	char arrg[] = "a4A4e3E3o0O0t7T7l1L1"
+	int a;
+	int b;
 
-	while (x[a])
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		b = 0;
-
-		while (b < l)
+		for (b = 0; arrg[b] != '\0'; b++)
 		{
-			if (x[a] == big[b] || x[a] - 32 == big[b])
+			if (s[a] == arrg[b])
 			{
-				x[a] = bigNum;
+				s[a] = arrg[b + 1];
+				break;
 			}
-			b++;
 		}
-		a++;
 	}
-	return (x);
+	return (s);
 }
