@@ -20,6 +20,7 @@ void print_diagsums(int *a, int size)
 		for (c = 0; c < size; c++)
 		{
 			if (b == c)
+			{
 				s1 += *((a + b * size) + c);
 			}
 			if ((b + c) == (size - 1))
