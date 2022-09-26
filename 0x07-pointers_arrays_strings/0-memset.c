@@ -6,7 +6,7 @@
  * @b: character toinput
  * @n: size of elements
  *
- * Return: will return a pointer 
+ * Return: will return a pointer
  */
 
 char *_memset(char *s, char b, unsigned int n)
