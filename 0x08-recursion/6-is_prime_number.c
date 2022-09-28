@@ -10,7 +10,7 @@ int alx(int a, int c)
 	if (c % a == 0 && c != a)
 		return (0);
 	if (c % a != 0 && a < c)
-		return (helper(a + 1, c));
+		return (alx(a + 1, c));
 	return (1);
 }
 /**
