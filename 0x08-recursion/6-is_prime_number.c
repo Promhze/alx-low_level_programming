@@ -20,7 +20,8 @@ int alx(int a, int c)
  */
 int is_prime_number(int n)
 {
-	int a = 2;
+	int a = 2; 
+	int c = 0;
 
 	if (n < 2)
 		return (0);
