@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * alx - program with the sauce
  * @a:  ist input
