@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * is_prime - this code will display a prime number
+ * is_prime_number - this code will display a prime number
  * @i: input int i
  * @j: input int j
  * Return: boolean val of the state of inputs
  */
 
-int is_prime(int i, int j)
+int is_prime_number(int i, int j)
 {
 	if (j == 1)
 	{
