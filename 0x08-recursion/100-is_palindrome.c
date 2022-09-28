@@ -18,7 +18,7 @@ int str_len(char *s)
 }
 
 /**
- * is_palindrome - checks for a palindrome
+ * check_palindrome - checks for a palindrome
  * @s: input character
  * @i: an interator
  * @len: string length indicator
@@ -27,7 +27,7 @@ int str_len(char *s)
  * Return: the state of the string
  */
 
-int is_palindrome(char *s, int len, int i)
+int check_palindrome(char *s, int len, int i)
 {
 	if (s[i] == s[len / 2])
 	{
