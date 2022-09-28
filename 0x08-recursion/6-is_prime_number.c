@@ -1,37 +1,28 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * is_prime_number - this code will display a prime number
- * @i: input int i
- * @j: input int j
- * Return: boolean val of the state of inputs
+ * alx - program with the sauce
+ * @a:  ist input
+ * @c: 2nd input
+ * Return: value
  */
-
-int is_prime_number(int i, int j)
+int alx(int a, int c)
 {
-	if (j == 1)
-	{
-		return (1);
-	}
-	if (i % j == 0)
-	{
+	if (c % a == 0 && c != a)
 		return (0);
-	}
-	return (is_prime(i, j - 1));
+	if (c % a != 0 && a < c)
+		return (helper(a + 1, c));
+	return (1);
 }
-
- /**
-  * is_prime_number - printing prime numbers
-  * @n: input integer value
-  *
-  * Return: returns the state of the inout value
-  */
-
+/**
+ * is_prime_number - is prime or not
+ * @n: integer to compare
+ * Return: boolean
+ */
 int is_prime_number(int n)
 {
-	if (n < 3)
-	{
+	int i = 2;
+
+	if (n < 2)
 		return (0);
-	}
-	return (is_prime(n, n - 1));
+	return (alx(a, c));
 }
