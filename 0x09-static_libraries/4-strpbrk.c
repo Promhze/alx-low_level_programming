@@ -24,15 +24,15 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (accept[b]== s[a])
 			{
-				if (j <= len)
+				if (b <= len)
 				{
-					len = j;
-					exist = 1;
+					len = b;
+					search = 1;
 				}
 			}
 		}
 	}
-	if (exist == 1)
+	if (search == 1)
 	{
 		return (&s[len]);
 	}
@@ -42,5 +42,4 @@ char *_strpbrk(char *s, char *accept)
 	}
 	return (0);
 }
-Footer
 
