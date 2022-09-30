@@ -22,9 +22,9 @@ int main(int argc, char *argv[])
 			{
 				return (printf("Error\n"), 1);
 			}
-			res += atoi(argv[a]);
+			answer += atoi(argv[a]);
 		}
 	}
-	printf("%d\n", res);
+	printf("%d\n", answer);
 	return (0);
 }
