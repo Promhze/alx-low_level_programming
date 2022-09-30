@@ -1,1 +1,1 @@
-my tryouts on static libraries
+# this all about static libraries
