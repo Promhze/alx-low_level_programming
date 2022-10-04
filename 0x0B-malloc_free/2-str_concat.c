@@ -1,53 +1,43 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
- * str_concat - concatenates two strings
- * @s1: first input string
- * @s2: second input string
+ * str_concat - concatenates two strings.
+ * @s1: first string.
+ * @s2: second string.
  *
- * Return: returns NULL on failure
+ * Return: pointer of an array of chars
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	int len1, len2, a, b;
-	char *str;
+	char *strout;
+	unsigned int a, b, c, d;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
-	else if (s2 == NULL)
-	{
+	if (s2 == NULL)
 		s2 = "";
-	}
-	for (len1 = 0; s1[len1] != '\0'; len1++)
-		continue;
-	for (len2 = 0; s2[len2] != '\0'; len2++)
-		continue;
-	str = malloc(len1 + len2 + 1);
 
-	if (str == NULL)
+	for (a = 0; s1[a] != '\0'; a++)
+		;
+
+	for (b = 0; s2[b] != '\0'; b++)
+		;
+
+	strout = malloc(sizeof(char) * (a + b + 1));
+
+	if (strout == NULL)
 	{
+		free(strout);
 		return (NULL);
 	}
-	a = 0;
 
-	while (a < len1)
-	{
-		str[a] = s1[a];
-		a++;
-	}
-	b = 0;
+	for (c = 0; c < a; c++)
+		strout[k] = s1[c];
 
-	while (a < (len1 + len2))
-	{
-		str[a] = s2[b];
-		a++;
-		b++;
-	}
-	str[a] = '\0';
-	return (str);
+	d = b;
+	for (b = 0; b <= d; c++, b++)
+		strout[c] = s2[b];
+
+	return (strout);
 }
