@@ -32,8 +32,8 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	a = atoi(agrv[1]);
-	b = atoi(agrv[3]);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
 	printf("%d\n", operation(a, b));
 	return (0);
