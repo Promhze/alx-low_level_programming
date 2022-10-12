@@ -22,9 +22,7 @@ int (get_op_func(char *s))(int, int)
 	while (a < 10)
 	{
 		if (s[0] == ops->op[a])
-		{
 			break;
-		}
 		a++;
 	}
 	return (ops[a / 2].f);
