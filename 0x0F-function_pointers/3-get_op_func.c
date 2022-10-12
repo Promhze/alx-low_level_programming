@@ -21,7 +21,7 @@ int (get_op_func(char *s))(int, int)
 
 	while (a < 10)
 	{
-		if ([s] == ops->op[a])
+		if (s[0] == ops->op[a])
 		{
 			break;
 		}
