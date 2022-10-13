@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>#include "3-calc.h"
 
 /**
  * main - main entry
@@ -10,38 +10,24 @@
 
 int main(int argc, char *argv[])
 {
-	int arg1, arg2, result;
-	char o;
-	int (*func)(int, int);
-
-	if (argc != 4)
+	if (argc == 4)
 	{
-		printf("Error\n");
-		exit(98);
+		int a;
+		int b;
+		int (*func)(int, int);
+
+		a = atoi(argv[1]);
+		b = atoi(argv[3]);
+		func get_op_func(argv[2]);
+		if ((*argv[2] == '%' || *argv[2] == '/') && b == 0)
+		{
+			print("Error\n");
+			exit(100);
+		}
+		printf("%d\n", func(a, b));
+		return (0);
 	}
 
-	arg1 = atoi(argv[1]);
-	arg2 = atoi(argv[3]);
-
-	func = get_op_func(argv[2]);
-
-	if (!func)
-	{
-		print("Error\n");
-		exit(99);
-	}
-
-	o = *argv[2];
-
-	if ((o  == '/' || o == '%') && arg2 == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-
-	result = func(arg1, arg2);
-
-	printf("%d\n", result);
-
-	return (0);
+	printf("Error\n");
+	exit(98);
 }
